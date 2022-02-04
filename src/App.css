@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input1 {
+  width: 200px;
+  margin-right: 10px;
+  height: 20px;
+}
+.input2 {
+  padding: 2px;
+  background-color: aqua;
+}
+.recipeTile-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 230px 230px 230px;
+}
+
+@media screen and (max-width: 900px) {
+  .recipeTile-container {
+    grid-template-columns: 230px 230px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .recipeTile-container {
+    grid-template-columns: 230px;
+  }
+}
